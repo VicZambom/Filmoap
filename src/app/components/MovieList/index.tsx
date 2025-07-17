@@ -4,7 +4,7 @@ import axios from 'axios';
 import './index.scss';
 import { use, useEffect, useState } from 'react';
 import MovieCard from '../MovieCard';
-import { Movie } from '@/types';
+import { Movie } from '@/types/movie';
 
 export default function MovieList() {
   const [movies, setMovies] = useState<Movie[]>([]);
