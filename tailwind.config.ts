@@ -10,7 +10,8 @@ const config: Config = {
     extend: {},
       colors: {
         'brand-brown': '#781212ff',
-        'brand-gray': '#f5f5f5ff',
+        'brand-gray': '#f9f9f9ff',
+        'brand-2gray': '#f6f6f6ff',
       },
   },
   plugins: [],

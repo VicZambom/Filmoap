@@ -23,8 +23,9 @@ export default function Navbar({ onSearch }: NavbarProps) {
   };
 
   return (
-    <nav className="bg-white px-[3%] py-3 shadow-md flex items-center justify-between">
-      <h1 className="text-brand-brown text-2xl font-semibold">Filmes</h1>
+    // Barra de navegação com título e campo de busca
+    <nav className="bg-brand-brown px-[3%] py-6 drop-shadow-md flex items-center justify-between">
+      <h1 className="text-brand-2gray text-3xl font-semibold">Filmes</h1>
       {/* Campo de busca com ícone de lupa */}
       <div className="relative flex items-center">
         <input 
@@ -33,11 +34,11 @@ export default function Navbar({ onSearch }: NavbarProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
-          className="bg-transparent border border-brand-brown rounded-full py-1 pl-4 pr-10 text-brand-brown placeholder:text-brand-brown/70 focus:outline-none focus:ring-2 focus:ring-brand-brown"
+          className="bg-brand-gray/50 border border-brand-brown rounded-xl py-2 pl-5 pr-11 text-brand-brown placeholder:text-brand-brown focus:outline-none focus:ring-2 focus:ring-brand-brown"
         />
         <button 
           onClick={handleSearchClick}
-          className="absolute right-3 text-brand-brown hover:text-brand-brown"
+          className="absolute right-3 text-brand-brown hover:text-brand-brown/70"
         >
           <FaSearch />
         </button>

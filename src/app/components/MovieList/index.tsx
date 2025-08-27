@@ -52,7 +52,7 @@ export default function MovieList({ searchQuery }: MovieListProps) {
 
   return ( 
     // Lista de filmes exibida em uma grade responsiva
-    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-6">
+    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-6 bg-brand-2gray">
       {movies.map((movie) => 
         <MovieCard 
           key={movie.id}
