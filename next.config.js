@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/Movieapp', 
+  basePath: '/Filmoap', // Ou '/Filmoap' se estiver a usar o novo repositório
   images: {
-    unoptimized: true, 
+    unoptimized: true,
   },
 };
 
