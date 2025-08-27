@@ -1,10 +1,19 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { MovieDetail } from '@/types/movie';
+import { Movie, MovieDetail } from '@/types/movie';
 import axios from 'axios';
 import { FaCalendar, FaClock, FaStar, FaArrowLeft } from 'react-icons/fa';
 import Link from 'next/link';
+
+export async function generateStaticParams() {
+  const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`);
+  const data = await response.json();
+
+  return data.results.map((movie: Movie) => ({
+    id: movie.id.toString(),
+  }));
+}
 
 export default function MovieDetailPage({ params }: { params: { id: string } }) {
   const [movie, setMovie] = useState<MovieDetail | null>(null);
