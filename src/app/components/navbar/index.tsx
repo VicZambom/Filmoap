@@ -22,10 +22,19 @@ export default function Navbar({ onSearch }: NavbarProps) {
     }
   };
 
+  const handleTitleClick = () => {
+    setQuery(''); 
+    onSearch(''); 
+  };
+
   return (
     // Barra de navegação com título e campo de busca
     <nav className="bg-brand-brown px-[3%] py-6 drop-shadow-md flex items-center justify-between">
-      <h1 className="text-brand-2gray text-3xl font-semibold">Filmes</h1>
+      <h1 
+        className="text-brand-2gray text-2xl font-semibold cursor-pointer"
+        onClick={handleTitleClick}
+      >
+        Filmes</h1>
       {/* Campo de busca com ícone de lupa */}
       <div className="relative flex items-center">
         <input 

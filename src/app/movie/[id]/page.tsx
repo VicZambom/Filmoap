@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import { MovieDetail } from '@/types/movie';
 import axios from 'axios';
-import { FaCalendar, FaClock, FaStar } from 'react-icons/fa';
+import { FaCalendar, FaClock, FaStar, FaArrowLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function MovieDetailPage({ params }: { params: { id: string } }) {
   const [movie, setMovie] = useState<MovieDetail | null>(null);
@@ -38,7 +39,12 @@ export default function MovieDetailPage({ params }: { params: { id: string } }) 
   return (
     // Contentor principal 
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center p-4">
-      
+
+      <Link href="/" className="absolute top-5 left-5 z-20 flex items-center gap-2 bg-black/50 text-brand-gray py-2 px-4 rounded-full transition-transform hover:scale-105">
+        <FaArrowLeft />
+        <span>Voltar</span>
+      </Link>
+
       {/* Imagem de fundo */}
       <div
         className="absolute inset-0 bg-cover bg-center blur-md scale-100 brightness-55"
