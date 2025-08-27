@@ -4,9 +4,6 @@ Bem-vindo ao MovieApp, uma aplicação web moderna e responsiva para explorar o 
 
 Este projeto foi construído para demonstrar competências no ecossistema de desenvolvimento web moderno, incluindo Next.js, TypeScript e Tailwind CSS.
 
-*(Sugestão: tire um screenshot da sua aplicação e adicione aqui para mostrar o seu trabalho!)*
-`![Pré-visualização do MovieApp](URL_DA_SUA_IMAGEM_AQUI.png)`
-
 ## ✨ Funcionalidades
 
 * **Página Inicial Dinâmica:** Exibe os filmes mais populares do momento, obtidos diretamente da API do The Movie Database (TMDb).
@@ -65,3 +62,4 @@ Para executar este projeto no seu ambiente local, siga os passos abaixo:
     ```
 
 A aplicação estará agora disponível em [http://localhost:3000](http://localhost:3000).
+
