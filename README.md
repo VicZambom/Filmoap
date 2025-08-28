@@ -61,5 +61,6 @@ Para executar este projeto no seu ambiente local, siga os passos abaixo:
     npm run dev
     ```
 
-A aplicação estará agora disponível em [http://localhost:3000](http://localhost:3000).
+A aplicação estará agora disponível em [https://viczambom.github.io/Filmoap/](https://viczambom.github.io/Filmoap/).
+
 
